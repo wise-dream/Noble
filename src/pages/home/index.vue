@@ -192,6 +192,7 @@ const handleSelectSubcategory = (id: string) => {
   text-align: left;
   border: 1px solid #fff;
   min-height: 280px;
+  max-height: 280px;
   max-width: 400px;
   transition:
     transform 0.2s ease-out,

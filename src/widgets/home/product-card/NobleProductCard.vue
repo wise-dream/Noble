@@ -13,8 +13,8 @@ defineProps<Props>()
     :to="`/home/product/${product.id}`"
     class="noble-card noble-card--product group"
   >
-    <div class="relative overflow-hidden  h-full">
-      <div class="w-full overflow-hidden">
+    <div class="relative overflow-hidden h-full">
+      <div class="w-full overflow-hidden h-full">
         <img
           :src="product.image"
           :alt="product.name"
