@@ -10,6 +10,14 @@ export default defineNuxtConfig({
 
   css: ['~/app/main.css'],
 
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/fonts',
+    '@pinia/nuxt',
+    '@vite-pwa/nuxt',
+    '@nuxtjs/i18n'
+  ],
+
   alias: {
     '@app': resolve(__dirname, 'src/app'),
     '@pages': resolve(__dirname, 'src/pages'),
@@ -17,6 +25,26 @@ export default defineNuxtConfig({
     '@entities': resolve(__dirname, 'src/entities'),
     '@features': resolve(__dirname, 'src/features'),
     '@widgets': resolve(__dirname, 'src/widgets'),
+  },
+
+  i18n: {
+    langDir: '',
+    locales: [
+      { code: 'ru', iso: 'ru-RU', file: 'ru.json', name: 'Русский' },
+      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
+      { code: 'kk', iso: 'kk-KZ', file: 'kk.json', name: 'Қазақша' },
+      { code: 'zh', iso: 'zh-CN', file: 'zh.json', name: '中文' },
+    ],
+
+    defaultLocale: 'ru',
+
+    strategy: 'no_prefix',
+
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'noble_i18n',
+      redirectOn: 'root',
+    },
   },
 
   imports: {

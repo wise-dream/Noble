@@ -1,22 +1,18 @@
 <script setup lang="ts">
-const message = 'Nuxt + PWA + FSD scaffold'
+import { HomeHero } from '@widgets/home/hero'
+import { HomeMarquee } from '@widgets/home/marquee'
+import { HomeSpecialists } from '@widgets/home/specialists'
 </script>
 
 <template>
-  <div class="space-y-4">
-    <h2 class="text-2xl font-semibold">
-      {{ message }}
-    </h2>
+  <main class="bg-black text-white">
+    <HomeHero />
 
-    <p>
-      Стартовая страница. Дальше реализуешь FSD-слои: entities, features, widgets, shared.
-    </p>
+    <HomeMarquee />
 
-    <ul class="list-disc list-inside text-sm text-slate-300">
-      <li>src/entities - модели и API для доменных сущностей</li>
-      <li>src/features - «фичи» уровня пользовательских сценариев</li>
-      <li>src/widgets - комплексные блоки страниц</li>
-      <li>src/shared - переиспользуемые примитивы и инфраструктура</li>
-    </ul>
-  </div>
+    <HomeSpecialists />
+  </main>
 </template>
+
+<style scoped>
+</style>

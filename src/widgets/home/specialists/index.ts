@@ -1,0 +1,1 @@
+export { default as HomeSpecialists } from './index.vue'
