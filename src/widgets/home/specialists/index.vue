@@ -21,7 +21,7 @@ const specialists = computed(() =>
     class="bg-black px-4 md:px-8 py-16 md:py-24"
     aria-labelledby="specialists-title"
   >
-    <div class="mx-auto max-w-6xl">
+    <div class="mx-auto">
       <header
         class="mb-10 md:mb-14 flex flex-col items-start gap-4 md:flex-row md:justify-between "
       >
@@ -44,20 +44,24 @@ const specialists = computed(() =>
         </p>
       </header>
 
-      <div class="grid gap-8 md:grid-cols-3">
+      <div class="grid gap-8 md:grid-cols-4">
         <article
           v-for="spec in specialists"
           :key="spec.partnerId"
-          class="group rounded-3xl border border-white/5 bg-white/5  backdrop-blur-md transition-transform duration-200 ease-out hover:-translate-y-1 hover:bg-white/8 overflow-hidden pb-4 md:pb-5"
+          :class="[
+            'group border border-white/5 bg-white/5 backdrop-blur-md', 
+            'transition-transform duration-200 ease-out hover:-translate-y-1', 
+            'hover:bg-white/8 overflow-hidden h-70'
+          ].join(' ')"
         >
           <img
             :src="spec.thumbnail.url"
             :alt="spec.thumbnail.alt"
-            class="h-44 w-full object-cover md:h-52 mb-4"
+            class="min-h-full min-w-full object-cover md:min-h-full"
             loading="lazy"
           >
 
-          <div class="flex flex-col gap-1 text-left px-4 md:px-5">
+          <div class="flex flex-col gap-1 text-left absolute bottom-3 left-3 bg-black z-10 px-3 py-2">
             <h3 class="text-sm md:text-base font-medium text-neutral-50">
               {{ spec.title }}
             </h3>
@@ -66,7 +70,7 @@ const specialists = computed(() =>
             </p>
             <p
               v-if="spec.city"
-              class="mt-1 text-[10px] uppercase tracking-[0.25em] text-neutral-500"
+              class="mt-1 text-[10px] uppercase tracking-[0.25em] text-white font-bold"
             >
               {{ spec.city }}
             </p>
@@ -78,5 +82,4 @@ const specialists = computed(() =>
 </template>
 
 <style scoped lang="postcss">
-/* при желании сюда тоже можно добавить @apply для карточек */
 </style>

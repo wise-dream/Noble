@@ -3,7 +3,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { Button } from '@shared/ui/button'
 import { useHead } from 'nuxt/app'
 
-const videoSrc = '/video/video.mp4'
+const videoSrc = '/video/art-video.mp4'
 
 useHead({
   title: 'Noble — премиальный агрегатор дизайна, искусства и мебели',

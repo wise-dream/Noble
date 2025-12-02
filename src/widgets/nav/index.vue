@@ -249,7 +249,6 @@ const changeLanguage = (code: LocaleCode) => {
 }
 
 .nav-lang-chip:hover {
-  background-color: rgba(249, 250, 251, 0.06);
   border-color: rgba(249, 250, 251, 0.6);
   transform: translateY(-1px);
 }

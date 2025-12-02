@@ -133,4 +133,40 @@ export const mockSpecialists: SpecialistCard[] = [
     subtitle: 'Архитектурный свет',
     thumbnail: placeholderImage('designer-3', 'Фабрика VETVI'),
   },
+  {
+    partnerId: 'partner-designer-atelier-noble',
+    title: 'Atelier Noble',
+    subtitle: 'Премиальные интерьеры квартир и пентхаусов',
+    thumbnail: placeholderImage('designer-4', 'Студия Atelier Noble'),
+  },
+  {
+    partnerId: 'partner-designer-minimal-form',
+    title: 'Minimal Form',
+    subtitle: 'Минималистичные интерьеры и визуальные концепции',
+    thumbnail: placeholderImage('designer-5', 'Студия Minimal Form'),
+  },
+  {
+    partnerId: 'partner-artist-kurbanova',
+    title: 'Курбанова',
+    subtitle: 'Абстрактная живопись и арт-объекты',
+    thumbnail: placeholderImage('designer-6', 'Художница Курбанова'),
+  },
+  {
+    partnerId: 'partner-supplier-nordic-living',
+    title: 'Nordic Living',
+    subtitle: 'Современная скандинавская мебель',
+    thumbnail: placeholderImage('designer-7', 'Бренд Nordic Living'),
+  },
+  {
+    partnerId: 'partner-supplier-signature-furniture',
+    title: 'Signature Furniture',
+    subtitle: 'Авторская мебель и предметы интерьера',
+    thumbnail: placeholderImage('designer-8', 'Signature Furniture'),
+  },
+  {
+    partnerId: 'partner-artist-studio-avant',
+    title: 'Studio Avant',
+    subtitle: 'Галерея современного искусства и принтов',
+    thumbnail: placeholderImage('designer-9', 'Studio Avant Art'),
+  },
 ]

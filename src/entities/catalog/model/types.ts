@@ -1,9 +1,5 @@
-// src/entities/catalog/model/types.ts
-
 import type { CatalogKind, ModerationStatus } from '../../../shared/model/common'
 import type { ImageMedia } from '../../../shared/model/media'
-
-// Категории каталога
 
 export interface CatalogCategory {
   id: string
@@ -15,8 +11,6 @@ export interface CatalogCategory {
   heroImage?: ImageMedia
   order: number
 }
-
-// База для товаров
 
 export interface CatalogItemBase {
   id: string
