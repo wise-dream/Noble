@@ -41,7 +41,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.0",
+    "@iconify-json/lucide": "^1.2.75",
     "@types/node": "latest",
+    "postcss": "^8.5.6",
     "typescript": "latest",
     "vue-tsc": "^3.1.5"
   }

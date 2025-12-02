@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import { HomeHero } from '@widgets/home/hero'
-import { HomeMarquee } from '@widgets/home/marquee'
-import { HomeSpecialists } from '@widgets/home/specialists'
+import { HomeHero } from '@widgets/main/hero'
+import { HomeMarquee } from '@widgets/main/marquee'
+import { HomeSpecialists } from '@widgets/main/specialists'
 </script>
 
 <template>
-  <main class="bg-black text-white">
-    <HomeHero />
-
-    <HomeMarquee />
-
-    <HomeSpecialists />
-  </main>
+  <HomeHero />  
+  <HomeMarquee />
+  <HomeSpecialists />
 </template>
 
 <style scoped>

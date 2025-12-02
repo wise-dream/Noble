@@ -200,7 +200,6 @@ onBeforeUnmount(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9999px;
   padding: 0.75rem 2rem;
   font-size: 0.625rem;
   line-height: 1;

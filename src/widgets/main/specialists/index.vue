@@ -38,10 +38,6 @@ const specialists = computed(() =>
             Дизайнеры · художники · бренды
           </h2>
         </div>
-        <p class="max-w-md text-xs md:text-sm text-neutral-300 md:mt-[calc(16px+0.5rem)]">
-          Кураторский пул студий, художников и поставщиков, с которыми мы
-          создаём интерьеры и коллекции для NOBLE.
-        </p>
       </header>
 
       <div class="grid gap-8 md:grid-cols-4">

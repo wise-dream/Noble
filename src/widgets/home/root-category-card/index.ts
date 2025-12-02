@@ -1,0 +1,1 @@
+export { default as RootCategoryCard } from './NobleRootCategoryCard.vue'
